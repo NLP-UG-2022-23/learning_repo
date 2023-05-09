@@ -6,3 +6,4 @@ Ale trudny ten git :x
 Hi!
 This is another sentence.
 This is a sentence added on my_temp_branch.
+tralalala
