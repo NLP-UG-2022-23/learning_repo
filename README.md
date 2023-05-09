@@ -4,3 +4,4 @@ This is my first sentence.
 Hello, World!
 Ale trudny ten git :x
 Hi!
+This is another sentence.
