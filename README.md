@@ -1,7 +1,6 @@
-# learning_repo
-The aim of this repository is to learn how to use Git and GitHub :)
-This is my first sentence.
-This is my second sentence
+# learning_repo this is a learning repo not a dumpster
+The aim of this repository is to learn how to use Git and GitHub (:
+This is my second uttering
 Hallo Welt!
 Hi!
 This is another sentence.
