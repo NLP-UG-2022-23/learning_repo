@@ -1,5 +1,5 @@
 # learning_repo this is a learning repo not a dumpster
-The aim of this repository is to learn how to use Git and GitHub (:
+The aim of this repository is to learn how to use Git and GitHub :) and yeah
 This is my second uttering
 Hallo Welt!
 Hi!
