@@ -6,4 +6,6 @@ Hi!
 This is another sentence.
 This is a sentence added on my_temp_branch.
 traLALALA
+learning git
+today is 16th May
 SALUT, World!
