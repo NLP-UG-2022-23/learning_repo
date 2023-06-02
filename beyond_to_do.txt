@@ -1,0 +1,6 @@
+<!--to do:fix the 'free flowing editors' situation (Hancké, Bob, et al., editors. 2007.)-->
+  <!--to do:tweak the locale files https://forums.zotero.org/discussion/24160/modifying-csl-how-to-i-remove-p-add-single-quotation-marks-to-journal-title-->
+  <!--up^ the problem is that we can either change it to en:GB in the default-locale and get-->
+  <!--‘Rooftop Greenhouse Will Boost City Farming’.-->  
+  <!--or not do it and get "Rooftop Greenhouse Will Boost City Farming."-->
+  <!--to do: pages having different format in journals and everywhere else-->
