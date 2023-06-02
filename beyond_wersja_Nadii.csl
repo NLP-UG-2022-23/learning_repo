@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never">
+  <info>
+    <title>Beyond Philology</title>
+    <id>http://www.zotero.org/styles/beyond-philology</id>
+    <link rel="self" href="http://www.zotero.org/styles/beyond-philology"/>
+    <issn>1732-1220</issn>
+    <updated>2023-05-07T14:48:21+00:00</updated>
+  </info>
+  <macro name="Author">
+    <names variable="author">
+      <name and="text" delimiter-precedes-et-al="always" delimiter-precedes-last="always" initialize="false" name-as-sort-order="first"/>
+      <substitute>
+        <names variable="editor"/>
+        <names variable="translator"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="Author-intext">
+    <names variable="author">
+      <name form="short" delimiter="" and="text" initialize-with="." sort-separator=""/>
+    </names>
+  </macro>
+  <macro name="Date-intext">
+    <date date-parts="year" form="numeric" variable="issued" prefix=" ">
+      <date-part name="year"/>
+    </date>
+    <text variable="page" form="short" prefix=": "/>
+  </macro>
+  <macro name="Pages">
+    <label prefix=":" variable="number" form="short"/>
+  </macro>
+  <macro name="Title">
+    <choose>
+      <if type="book collection" match="any">
+        <text variable="title" font-style="italic" prefix=". " suffix="."/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="Author-intext">
+    <names variable="author">
+      <name delimiter=""/>
+    </names>
+  </macro>
+  <citation et-al-min="3" disambiguate-add-names="true" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" givenname-disambiguation-rule="primary-name-with-initials" collapse="year">
+    <layout delimiter=", " prefix="(" suffix=")">
+      <group>
+        <text macro="Author-intext"/>
+        <text macro="Date-intext"/>
+        <text macro="Pages"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true" et-al-min="3" et-al-use-first="1" line-spacing="2" entry-spacing="0" subsequent-author-substitute="---">
+    <sort>
+      <key macro="author"/>
+      <key variable="title"/>
+    </sort>
+    <layout suffix=".">
+      <group delimiter=". ">
+        <text macro="author"/>
+        <text macro="title"/>
+        <date variable="original-date" form="numeric" date-parts="year"/>
+        <group delimiter=", ">
+          <!---This group corresponds to MLA's "Container 1"-->
+          <text macro="container-title"/>
+          <text macro="other-contributors"/>
+          <text macro="version"/>
+          <text macro="number"/>
+          <text macro="publisher"/>
+          <text macro="publication-date"/>
+          <text macro="location"/>
+        </group>
+        <group delimiter=", ">
+          <!---This group corresponds to MLA's "Container 2"-->
+          <!--currently just using this one for archival info-->
+          <text macro="container2-title"/>
+          <text macro="container2-location"/>
+        </group>
+        <text macro="accessed"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>
